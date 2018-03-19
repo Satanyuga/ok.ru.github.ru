@@ -1,0 +1,1 @@
+define(["OK/utils/utils"],function(a){function b(c){a.ajax({type:"GET",url:c},function(d){b(decodeURIComponent(d),true);}).done(a.updateBlockModelCallback);}return{activate:function(d){var c=d.getAttribute("href");d.addEventListener("click",function(f){b(c);f.preventDefault();f.stopPropagation();return false;},true);}};});
